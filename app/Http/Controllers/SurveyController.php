@@ -1,0 +1,14 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+class SurveyController extends Controller
+{
+    //
+    public function show(\App\Questionaire $questionaire)
+    {
+        return view('survey.show', compact('questionaire'));
+    }
+}
